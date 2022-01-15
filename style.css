@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;600;700&display=swap');
+/* filter */
+
+body {
+    background-color: #e9ecf1 !important;
+}
+
+#mitarbeiter1, #mitarbeiter2, #mitarbeiter3, #mitarbeiter4 {
+    font-family: "DM Serif Display";
+    font-size: 2em;
+}
+
+#steckbrief1, #besschrieb1, #besschrieb3, #besschrieb4 {
+    font-size: 1em;
+    font-family: Raleway, sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+
+#textinhalt1, #textinhalt2, #textinhalt3, #textinhalt4 {
+    padding: 3em !important;
+}
+
+/* Show more / Show less */
+#besschrieb1, #besschrieb2, #besschrieb3, #besschrieb4 {
+    width: 650px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#besschrieb1.open, #besschrieb2.open, #besschrieb3.open, #besschrieb4.open {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#besschrieb1.close, #besschrieb2.close, #besschrieb3.close, #besschrieb4.close {
+    max-height: 0;
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#show-more1, #show-more2, #show-more3, #show-more4 {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px 0 100px;
+    margin-top: 50px;
+}
