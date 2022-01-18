@@ -33,7 +33,6 @@ let mitarbeiter2 = {
         "telefon": "079 021 80 22"
     }
 }
-
 let mitarbeiter3 = {
     "firstname": "Jasmin ",
     "lastname": "Furrer",
@@ -49,7 +48,6 @@ let mitarbeiter3 = {
         "telefon": "079 245 63 10"
     }
 }
-
 let mitarbeiter4 = {
     "firstname": "Dr. Klaus ",
     "lastname": "Odermatt",

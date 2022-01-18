@@ -88,7 +88,7 @@ button2.onclick = function () {
     }
 }
 
-//Bild wechseln (abgeändert von Lehrer wegen mehreren Bildern)
+//Bild wechseln
 let xchange2 = 1;
 
 function changePicture2() {
@@ -141,7 +141,7 @@ button3.onclick = function () {
     }
 }
 
-//Bild wechseln (abgeändert von Lehrer wegen mehreren Bildern)
+//Bild wechseln
 let xchange3 = 1;
 
 function changePicture3() {
@@ -194,7 +194,7 @@ button4.onclick = function () {
     }
 }
 
-//Bild wechseln (abgeändert von Lehrer wegen mehreren Bildern)
+//Bild wechseln
 let xchange4 = 1;
 
 function changePicture4() {
