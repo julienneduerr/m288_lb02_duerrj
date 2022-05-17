@@ -3,15 +3,15 @@
 /* filter */
 
 body {
-    background-color: red !important;
+    background-color: #e9ecf1 !important;
 }
 
-#mitarbeiter1, #mitarbeiter2, #mitarbeiter3, #mitarbeiter4 {
+#mitarbeiter1, #mitarbeiter2, #mitarbeiter3, #mitarbeiter4, #willkommen {
     font-family: "DM Serif Display";
     font-size: 2em;
 }
 
-#steckbrief1, #besschrieb1, #besschrieb3, #besschrieb4 {
+#steckbrief1, #besschrieb1, #besschrieb3, #besschrieb4, h3, p{
     font-size: 1em;
     font-family: Raleway, sans-serif;
 }
@@ -72,4 +72,17 @@ footer {
     justify-content: space-between;
     padding: 50px 100px 0 100px;
     margin-top: 50px;
+}
+#einleitung{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+#startbild{
+    padding: 80px;
+    width: 100%;
+}
+nav{
+    background-color: #e9ecf1 !important;
 }
