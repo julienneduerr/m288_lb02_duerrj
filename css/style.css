@@ -6,7 +6,7 @@ body {
     background-color: #e9ecf1 !important;
 }
 
-#mitarbeiter1, #mitarbeiter2, #mitarbeiter3, #mitarbeiter4, #willkommen {
+#mitarbeiter1, #mitarbeiter2, #mitarbeiter3, #mitarbeiter4, .titel {
     font-family: "DM Serif Display";
     font-size: 2em;
 }
@@ -73,9 +73,16 @@ footer {
     padding: 50px 100px 0 100px;
     margin-top: 50px;
 }
-#einleitung{
+#einleitung {
     width: 50%;
     margin: auto;
+    text-align: center;
+}
+
+#formularEinleitung {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -85,4 +92,17 @@ footer {
 }
 nav{
     background-color: #e9ecf1 !important;
+}
+
+#formular{
+    display: flex;
+}
+
+#formLinks{
+    width: 50%;
+    margin-left: 100px;
+}
+
+#formRechts{
+    width: 50%;
 }

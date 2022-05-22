@@ -41,7 +41,7 @@
         <img id="startbild" src="assets/startbild1.jpg">
     </div>
     <div class="container" id="einleitung">
-        <span id="willkommen"> WILKOMMEN</span>
+        <span class="titel"> WILKOMMEN</span>
         <br>
         <br>
         <p>Das Tierheim Rosenberg besteht seit Jahrzehnten. Hier im Rosenberg werden unsere Vermittlungshunde
@@ -115,7 +115,44 @@
         </div>
     </div>
 </div>
-
+<div id="kontaktformular">
+    <div id="formularEinleitung">
+        <span class="titel"> KONTAKTFORMULAR</span>
+        <br>
+        <br>
+        <p>Wollen Sie einem unserer Tiere ein neues zu Hause schenken. Füllen sie das Formular aus und treten sie so mit uns in Kontakt. Wir freuen uns auf ihre Anfragen!</p>
+    </div>
+    <div id="formular">
+        <div id="formLinks">
+            <form>
+                Vorname:
+                <input type="text" name="einName" size="30" maxlength="40">
+            </form>
+            <br>
+            Ich interessiere mich für:
+            <select name="tierart">
+                <option value="val1">Hund</option>
+                <option value="val2">Katze</option>
+                <option value="val3">Meerschwein</option>
+                <option value="val4">Hase</option>
+            </select>
+        </div>
+        <div id="formRechts">
+            <form>
+                Nachname:
+                <input type="text" name="einName" size="30" maxlength="40">
+            </form>
+            <br>
+            <form>
+                Tiererfahrung:
+                <input type="radio" name="tiererfahrung" value="keine Erfahrung">keine Erfahrung
+                <input type="radio" name="tiererfahrung" value="ein wenig Erfahrung"
+                       checked>ein wenig Erfahrung
+                <input type="radio" name="tiererfahrung" value="viel Erfahrung">viel Erfahrung
+            </form>
+        </div>
+    </div>
+</div>
 <footer>
     <div>
         <strong>Adresse</strong>
