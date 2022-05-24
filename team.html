@@ -123,36 +123,43 @@
         <p>Wollen Sie einem unserer Tiere ein neues zu Hause schenken. Füllen sie das Formular aus und treten sie so mit uns in Kontakt. Wir freuen uns auf ihre Anfragen!</p>
     </div>
     <div id="formular">
-        <div id="formLinks">
             <form>
-                Vorname:
-                <input type="text" name="einName" size="30" maxlength="40">
+                <input id="vorname" class="contactform-input" type="text" name="einName" size="30" maxlength="40" placeholder="Vorname">
+                <input id="nachname" class="contactform-input" type="text" name="einName" size="30" maxlength="40" placeholder="Nachname">
+                <input id="email" name="email" type="text" class="contactform-input" size="30" maxlength="40" placeholder="Email" />
+
+                <p>Ihr Interesse bezieht sich auf: </p>
+                <select id="tierart" class="contactform-input" name="tierart">
+                    <option value="hunde">Hunde</option>
+                    <option value="katzen">Katzen</option>
+                    <option value="meerscheine">Meerschweine</option>
+                    <option value="hasen">Hasen</option>
+                </select>
+
+                <br>
+                <hr />
+                <p>Ihre Erfahrung im Bezug auf Tierhaltung:</p>
+                <input type="radio" id="ke" name="Tiererfahrung" value="keine Erfahrung">
+                <label for="ke"> kein Erfahrung</label>
+                <input type="radio" id="we" name="Tiererfahrung" value="wenig Erfahrung">
+                <label for="we"> wenig Erfahrung</label>
+                <input type="radio" id="ve" name="Tiererfahrung" value="viel Erfahrung">
+                <label for="ve"> viel Erfahrung</label>
+                <br>
+                <hr />
+
+                <p>Ihr Vorschlag für ein Besichtungstermin:</p>
+                <input id="date" class="contactform-input" type="date">
+                <br>
+                <br>
+                <input type="submit" value="SUBMIT"/>
             </form>
-            <br>
-            Ich interessiere mich für:
-            <select name="tierart">
-                <option value="val1">Hund</option>
-                <option value="val2">Katze</option>
-                <option value="val3">Meerschwein</option>
-                <option value="val4">Hase</option>
-            </select>
-        </div>
-        <div id="formRechts">
-            <form>
-                Nachname:
-                <input type="text" name="einName" size="30" maxlength="40">
-            </form>
-            <br>
-            <form>
-                Tiererfahrung:
-                <input type="radio" name="tiererfahrung" value="keine Erfahrung">keine Erfahrung
-                <input type="radio" name="tiererfahrung" value="ein wenig Erfahrung"
-                       checked>ein wenig Erfahrung
-                <input type="radio" name="tiererfahrung" value="viel Erfahrung">viel Erfahrung
-            </form>
-        </div>
     </div>
 </div>
+
+
+
+
 <footer>
     <div>
         <strong>Adresse</strong>

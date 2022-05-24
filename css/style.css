@@ -94,15 +94,65 @@ nav{
     background-color: #e9ecf1 !important;
 }
 
-#formular{
-    display: flex;
+#formular {
+    margin: 0 300px;
+
+}
+form{
+    font-family: Raleway, sans-serif;
 }
 
-#formLinks{
-    width: 50%;
-    margin-left: 100px;
+.contactform-input {
+    color:black;
+    font-family: Raleway, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #4a4e69;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
 }
 
-#formRechts{
-    width: 50%;
+.contactform-input:focus { border:2px solid #4a4e69; }
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: Raleway, sans-serif;
+    width: 100%;
+    background: #4a4e69;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color:white;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+[type="submit"]:hover { background:#22223c; }
+
+hr{
+    color: #22223c;
+}
+.toggle-buttons input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
