@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="tierheim_rosenberg" />
+    <orderEntry type="module" module-name="M307_Code-main" />
   </component>
 </module>
