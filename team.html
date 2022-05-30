@@ -143,18 +143,24 @@
         </div>
 
         <div class="form-control">
-            <label>Ihr Interesse bezieht sich auf: </label>
-            <select id="tierart" class="form-eingabefeld" name="tierart">
-                <option value="Bitte auswählen">Bitte auswählen</option>
-                <option value="hunde">Hunde</option>
-                <option value="katzen">Katzen</option>
-                <option value="meerscheine">Meerschweine</option>
-                <option value="hasen">Hasen</option>
-            </select>
+            <input id="phone" class="form-eingabefeld" type="tel" name="phone" size="30" maxlength="40" placeholder="Telefon">
             <br>
             <small>Error Message</small>
         </div>
 
+        <div class="form-control">
+            <label>Ihr Interesse bezieht sich auf: </label>
+            <select id="tierart" class="form-eingabefeld" name="tierart">
+                <option id=" " value="Bitte auswählen">Bitte auswählen</option>
+                <option id="hunde" value="hunde">Hunde</option>
+                <option id="katzen" value="katzen">Katzen</option>
+                <option id="meerschweine" value="meerschweine">Meerschweine</option>
+                <option id="hasen" value="hasen">Hasen</option>
+            </select>
+            <br>
+            <small>Error Message</small>
+        </div>
+        <!--Radiobutton
         <div class="form-control">
             <label>Ihre Erfahrungsniveau im Bezug auf Tierhaltung:</label>
             <input type="radio" id="ke" name="Tiererfahrung" value="keine Erfahrung">
@@ -166,6 +172,7 @@
             <br>
             <small>Error Message</small>
         </div>
+        -->
             <hr />
         <div class="form-control">
             <label>Ihr Vorschlag für ein Besichtungstermin:</label>

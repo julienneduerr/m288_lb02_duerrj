@@ -2,6 +2,9 @@ const form = document.getElementById('form');
 const vorname = document.getElementById('vorname');
 const nachname = document.getElementById('nachname');
 const email = document.getElementById('email');
+const phone = document.getElementById('phone');
+const tierart = document.getElementById('tierart');
+const date = document.getElementById('date');
 
 // Show input error message
 function showError(input, message) {
@@ -57,6 +60,16 @@ function checkLength(input, min, max) {
     }
 }
 
+// Check phone
+function checkPhone(input) {
+    const reg = /(\b(0041|0)|\B\+41)(\s?\(0\))?(\s)?[1-9]{2}(\s)?[0-9]{3}(\s)?[0-9]{2}(\s)?[0-9]{2}\b/;
+    if (reg.test(input.value.trim())) {
+        showSuccess(input);
+    } else {
+        showError(input, 'Telefon is not valid');
+    }
+}
+
 // Get fieldname
 function getFieldName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -64,13 +77,13 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-    if(!checkRequired([vorname, email, nachname])){
+    if(!checkRequired([vorname, email,phone,tierart,date,nachname])){
         checkLength(vorname, 3, 15);
         checkLength(nachname, 3, 20);
         checkEmail(email);
+        checkPhone(phone);
     }
 }
-
 
 // Event listeners
 form.addEventListener('submit', function(e) {
