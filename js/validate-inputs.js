@@ -2,7 +2,7 @@ const form = document.getElementById('form');
 const vorname = document.getElementById('vorname');
 const nachname = document.getElementById('nachname');
 const email = document.getElementById('email');
-const phone = document.getElementById('phone');
+const telefon = document.getElementById('telefon');
 const tierart = document.getElementById('tierart');
 const date = document.getElementById('date');
 
@@ -26,7 +26,7 @@ function checkEmail(input) {
     if (re.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Email is not valid');
+        showError(input, 'Bitte geben sie eine gültige Email an');
     }
 }
 
@@ -35,7 +35,7 @@ function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function(input) {
         if (input.value.trim() === '') {
-            showError(input, `${getFieldName(input)} is required`);
+            showError(input, `${getFieldName(input)} ist erforderlich`);
             isRequired = true;
         } else {
             showSuccess(input);
@@ -49,11 +49,11 @@ function checkRequired(inputArr) {
 function checkLength(input, min, max) {
     if (input.value.length < min) {
         showError(input,
-            `${getFieldName(input)} must be at least ${min} characters`
+            `${getFieldName(input)} muss mindestens ${min} Buchstaben haben`
         );
     } else if (input.value.length > max) {
         showError(input,
-            `${getFieldName(input)} must be less than ${max} characters`
+            `${getFieldName(input)} darf maximal ${max} Buchstaben haben`
         );
     } else {
         showSuccess(input);
@@ -66,7 +66,7 @@ function checkPhone(input) {
     if (reg.test(input.value.trim())) {
         showSuccess(input);
     } else {
-        showError(input, 'Telefon is not valid');
+        showError(input, 'Bitte geben sie eine gültige Nummer an');
     }
 }
 
@@ -77,11 +77,11 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-    if(!checkRequired([vorname, email,phone,tierart,date,nachname])){
+    if(!checkRequired([vorname, email,telefon,tierart,date,nachname])){
+        checkEmail(email);
+        checkPhone(telefon);
         checkLength(vorname, 3, 15);
         checkLength(nachname, 3, 20);
-        checkEmail(email);
-        checkPhone(phone);
     }
 }
 

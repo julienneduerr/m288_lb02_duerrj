@@ -180,6 +180,18 @@ hr{
     border-color: #e74c3c;
 }
 
+.form-control select {
+    display: block;
+}
+
+.form-control.success select {
+    border-color: #2ecc71 !important;
+}
+
+.form-control.error select {
+    border-color: #e74c3c;
+}
+
 .form-control small {
     color: #e74c3c;
     position: absolute;
