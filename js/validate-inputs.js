@@ -6,6 +6,7 @@ const telefon = document.getElementById('telefon');
 const tierart = document.getElementById('tierart');
 const date = document.getElementById('date');
 
+
 // Show input error message
 function showError(input, message) {
     const formControl = input.parentElement;
