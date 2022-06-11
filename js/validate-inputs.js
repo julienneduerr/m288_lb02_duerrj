@@ -5,6 +5,7 @@ const email = document.getElementById('email');
 const telefon = document.getElementById('telefon');
 const tierart = document.getElementById('tierart');
 const date = document.getElementById('date');
+const age = document.getElementById('alter');
 
 
 // Show input error message
@@ -71,6 +72,17 @@ function checkPhone(input) {
     }
 }
 
+
+// Check age
+function checkAge(input) {
+    const reg = /^(1[89]|[2-9][0-9])$/;
+    if (reg.test(input.value.trim())) {
+        showSuccess(input);
+    } else {
+        showError(input, 'Um ein Tier aufzunehmen müssen sie Volljährig sein');
+    }
+}
+
 // Get fieldname
 function getFieldName(input) {
     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -78,9 +90,10 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-    if(!checkRequired([vorname, email,telefon,tierart,date,nachname])){
+    if(!checkRequired([vorname, email,telefon,age,tierart,date,nachname])){
         checkEmail(email);
         checkPhone(telefon);
+        checkAge(age);
         checkLength(vorname, 3, 15);
         checkLength(nachname, 3, 20);
     }
